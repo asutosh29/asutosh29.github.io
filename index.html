@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMX | Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/textchange.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .ghost {
+            position: absolute;
+            top: 0;
+
+            animation-name: ghost;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+
+        }
+
+        .ghost:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <a href="#hero">
+                <h1>AMX</h1>
+            </a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+
+        <div class="ghost" title="Lol You Caught Me!">
+            <h1>👻</h1>
+        </div>
+        <hr />
+        <section class="section hero" id="hero">
+            <div class="left">
+                <h1>I'm <span class="highlight-text">Asutosh!</span></h1>
+                <div class="hero-text">
+                    <p>1st year Mathematics and Computing student at <span class="highlight-text">IIT Roorkee</span></p>
+                    <p>I make products which solve real life problems.</p>
+                    <p>I make Music which touches the audience.</p>
+                </div>
+                <div class="texts">
+                    <span>I do</span>
+                    <div class="roles">
+                        <span class="role">Coding</span>
+                        <span class="role">AI ML</span>
+                        <span class="role">Music Production</span>
+                        <span class="role">DJing</span>
+                        <span class="role">Speed cubing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="static/profile.jpeg" alt="Portrait of Asutosh Maharana" width=500>
+            </div>
+        </section>
+        <hr />
+        <section class="section about" id="about">
+            <div class="left">
+                <h1>About Me!</h1>
+                <div>
+                    <p>I am a 1st year student at <b><span class="highlight-text">IIT Roorkee</b></span> doing Bachelors
+                        in Mathematics and Computing.
+                        I am from Odisha, Bhubaneswar. I did all of schooling from there.
+                    </p>
+                    <div class="Ido">
+                        <h2>I do <span class="highlight-text">Coding</span></h2>
+                        <p>
+                            I enjoy making product ideas which solve real world problems. I am learning Web development
+                            make
+                            those
+                            products come to life!
+                        </p>
+                        <a href="#projects" class="btn">PROJECTS</a>
+                    </div>
+                    <div class="Ido">
+                        <h2>I do <span class="highlight-text">DJing</span></h2>
+                        <p>
+                            I produce Music and also do live song mixing as a DJ. I have been doing this since 2020.
+                        </p>
+                        <a href="#music" class="btn">MUSIC</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <img src="static/djprofile.jpg" alt="Portrait of Asutosh Maharana" width=500>
+            </div>
+        </section>
+        <hr />
+        <section class="section skills" id="skills">
+            <h1>SKILLS</h1>
+            <!-- <div class="bento-grid">
+                <div class="grid-item">
+                    <h2>Web</h2>
+                </div>
+                <div class="grid-item">
+                    <h2>CSS</h2>
+                </div>
+                <div class="grid-item">
+                    <h2>JS</h2>
+                </div>
+                <div class="grid-item">
+                    <h2>Python</h2>
+                </div>
+                <div class="grid-item">
+                    <h2>Flask</h2>
+                </div>
+                <div class="grid-item">
+                    <h2>C++</h2>
+                </div>
+            </div> -->
+
+            <div class="bento-container">
+
+                <div class="bento-grid skill-grid">
+                    <div class="grid-item">
+                        <div class="above">
+                            <h1>Web</h1>
+                            <!-- <p>Hover me!</p> -->
+                        </div>
+                        <div class="below">
+                            <h1>Web</h1>
+                            <h2>HTML</h2>
+                            <h2>CSS</h2>
+                            <h2>JS</h2>
+                            <h2>Flask</h2>
+                        </div>
+
+
+                    </div>
+                    <div class="grid-item">
+                        <div class="above">
+
+                            <h1>Programming</h1>
+                        </div>
+                        <div class="below">
+                            <h1>Programming</h1>
+                            <h2>Python</h2>
+                            <h2>C++</h2>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="above">
+
+                            <h1>Music</h1>
+                        </div>
+                        <div class="below">
+                            <h1>Music</h1>
+                            <h2>FL Studio</h2>
+                            <h2>Virtual DJ</h2>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="above">
+
+                            <h1>Tools</h1>
+                        </div>
+                        <div class="below">
+                            <h1>Tools</h1>
+                            <h2>Git</h2>
+                            <h2>Github</h2>
+                            <h2>Figma</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="section projects" id="projects">
+            <h1>PROJECTS</h1>
+            <div class="project-card">
+                <div class="left">
+                    <h2>TravelAI</h2>
+                    <p>
+                        An AI enabled travel planner which curates personalized travel plans based given information.
+                        Use the “Blind Travel” to go on unplanned Adventures, start from your choice explore the
+                        limitless
+                        possibilities!
+                    </p>
+                    <div class="tags">
+                        <span class="tag">FLASK</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                    <a href="https://github.com/asutosh29/travel-ai-personal" target="_blank" class="btn">GITHUB</a>
+                </div>
+                <div class="right">
+                    <img src="static/project_travelai.jpeg" alt="TravelAI Demo">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="left">
+                    <h2>Clickbait Highlighter</h2>
+                    <p>
+                        Ever confused with a video title seeming misleading?
+                        Clickbait highlighter has got you covered with its “Clickbait Score” and “Highlighting top k
+                        Words”,
+                        so that u can take a more informed decision.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">TRANSFORMER</span>
+                        <span class="tag">ANN</span>
+                        <span class="tag">TENSORFLOW</span>
+                    </div>
+                    <a href="https://github.com/asutosh29/clickbait-highligter-byop24" target="_blank"
+                        class="btn">GITHUB</a>
+                </div>
+                <div class="right">
+                    <img src="static/project_clickbait.jpeg" alt="TravelAI Demo">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="left">
+                    <h2>SceneIt!</h2>
+                    <p>
+                        Have you sceneit?
+                        Scene it is an automated event notifier for IITR students (Can be configured for any institue)
+                        Don’t miss any event of your choice by adding the directly to the calendar from SceneIt.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">FLASK</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">LLMS</span>
+                    </div>
+                    <a href="https://github.com/aryan-gupta7/scene-it" target="_blank" class="btn">GITHUB</a>
+                </div>
+                <div class="right">
+                    <img src="static/project_sceneit.jpeg" alt="TravelAI Demo">
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="section projects" id="hobbies">
+            <h1>HOBBIES</h1>
+            <div class="project-card">
+                <div class="left">
+                    <h2>SPEEDCUBING</h2>
+                    <p>
+                        I have been doing speed cubing since 2013. Here are my stats
+                    </p>
+                    <!-- <div class="tags">
+                        <span class="tag">3x3</span>
+                        <span class="tag">3x3 OH</span>
+                        <span class="tag">4x4</span>
+                        <span class="tag">2x2</span>
+                    </div> -->
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>Cubes</th>
+                                <th>Times</th>
+                            </tr>
+                            <tr>
+                                <td>3x3</td>
+                                <td>11.21 (PB)</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>16.87 (ao5)</td>
+                            </tr>
+                            <tr>
+                                <td>3x3 OH</td>
+                                <td>33.03 (PB)</td>
+                            </tr>
+                            <tr>
+                                <td>4x4</td>
+                                <td>74.78 (PB)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <a href="#" class="btn">GITHUB</a> -->
+                </div>
+                <div class="right">
+                    <img src="static/project_travelai.jpeg" alt="TravelAI Demo">
+                </div>
+            </div>
+            <div class="project-card" id="music">
+                <div class="left">
+                    <h2>MUSIC PRODUCTION</h2>
+                    <p>
+                        I produce songs and mix master myself. Here are Some of my work!
+                    </p>
+                    <div class="tags">
+                        <span class="tag">FL STUDIO</span>
+                        <span class="tag">MIXING</span>
+                        <span class="tag">MASTERING</span>
+                        <span class="tag">DJING</span>
+                    </div>
+                    <a href="https://soundcloud.com/asuz_29" target="_blank" class="btn">SOUNDCLOUD</a>
+                    <a href="https://www.youtube.com/@AsuBeats" target="_blank" class="btn">YOUTUBE</a>
+                </div>
+                <div class="right">
+                    <img src="static/project_clickbait.jpeg" alt="TravelAI Demo">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="left">
+                    <h2>Photography</h2>
+                    <p>
+                        Though not the best at it. But I have tried some click here there. Have a look!
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Lightroom Mobile</span>
+                        <span class="tag">Snapseed</span>
+                    </div>
+                    <a href="https://www.instagram.com/amx_iitr/" target="_blank" class="btn">INSTAGRAM</a>
+                    <a href="https://www.behance.net/gallery/205288661/PHOTO-GALLERY" target="_blank"
+                        class="btn">BEHANCE</a>
+                </div>
+                <div class="right">
+                    <img src="static/project_sceneit.jpeg" alt="TravelAI Demo">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="left">
+                    <h2>Origami</h2>
+                    <p>
+                        Though not the best at it. But I have tried some click here there. Have a look!
+                    </p>
+                    <!-- <div class="tags">
+                        <span class="tag">FLASK</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">LLMS</span>
+                    </div> -->
+                    <a href="https://www.behance.net/gallery/205291037/ORIGAMI-PORTOFOLIO" target="_blank"
+                        class="btn">BEHANCE</a>
+                </div>
+                <div class="right">
+                    <img src="static/project_sceneit.jpeg" alt="TravelAI Demo">
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section class="section contact" id="contact">
+            <h1>Get in Touch?</h1>
+            <div class="container">
+                <div class="left">
+                    <div class="form-section">
+                        <form action="#">
+                            <div class="form-group">
+                                <!-- <label for="name">Name</label> -->
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="email">Email</label> -->
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="message">Message</label> -->
+                                <input type="text" id="message" placeholder="Message">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="message">Message</label> -->
+                                <button type="submit" class="btn btn-submit">SUBMIT</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="quote">
+                        <h1>Some Quote by random Baba</h1>
+                        <p>- SunTzu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <footer>
+            <p> &copy; AMX | SDSLabs | 2025</p>
+        </footer>
+    </div>
+
+
+    <div class="scrollTop" title="Scroll to top">
+        <a href="#hero">&#8593;</a>
+    </div>
+    <div class="socials">
+        <a href="https://github.com/asutosh29" class="btn" target="_blank"><img src="static/icons/github.png"
+                alt="GitHub" title="GitHub"></a>
+        <a href="https://www.linkedin.com/in/asum6/" class="btn" target="_blank"><img src="static/icons/linkedIn.png"
+                alt="LinkedIn" title="LinkedIn"></a>
+        <a href="https://www.instagram.com/amx_iitr/" class="btn" target="_blank"><img src="static/icons/instagram.png"
+                alt="Instagram" title="Instagram"></a>
+        <a href="#contact" class="btn email">
+            <img src="static/icons/email.png" alt="Email" title="Email">
+            <!-- <div class="email-info">
+                <p>asutosh29aaz@gmail.com</p>
+            </div> -->
+        </a>
+    </div>
+</body>
+
+</html>

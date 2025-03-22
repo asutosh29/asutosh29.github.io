@@ -1,0 +1,72 @@
+@keyframes hover {
+    0% {}
+
+    100% {
+        box-shadow: 0 0 2rem rgba(255, 255, 255, 0.288);
+        transform: scale(1.01);
+    }
+}
+
+@keyframes ghost {
+    0% {
+        top: 50%;
+        left: 50%;
+
+    }
+
+    10% {
+        top: 70%;
+        /* left: 40%; */
+
+    }
+
+    20% {
+        top: 90%;
+        left: 90%;
+    }
+    30% {
+        top: 40%;
+        /* left: 80%; */
+    }
+
+    40% {
+        top: 20%;
+        left: 30%;
+    }
+    60% {
+        top: 8%;
+        /* left: 40%; */
+    }
+    80% {
+        top: 20%;
+        left: 10%;
+    }
+    90% {
+        top: 40%;
+        left: 30%;
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+    }
+}
+
+
+@keyframes shutter {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-0.2rem);
+    }
+}
+
+@keyframes shutter-up {
+    0%{
+
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
