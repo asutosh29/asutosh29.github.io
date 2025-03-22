@@ -956,8 +956,21 @@ footer {
         font-size: 0.6rem;
     }
 
-    .project-card h2{
+    .project-card h2 {
         font-size: 1.56rem;
+    }
+
+    th,
+    td {
+        padding: 0 1rem;
+        color: var(--clr-light-a0);
+        font-size: 0.9rem;
+    }
+
+    th {
+        font-size: 1.1rem;
+        background-color: var(--clr-surface-a0);
+        color: white;
     }
 
 
@@ -1017,6 +1030,14 @@ footer {
         font-size: 2.25rem;
     }
 
+    .quote h1 {
+        font-size: 1.1rem;
+    }
+
+    .quote p {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1040,5 +1061,13 @@ footer {
 
     .grid-item h2 {
         font-size: 0.9rem;
+    }
+
+    .quote h1 {
+        font-size: 0.9rem;
+    }
+
+    .quote p {
+        font-size: 0.7rem;
     }
 }
