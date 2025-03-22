@@ -47,8 +47,8 @@
     }
 }
 
-img{
-    width: 100% !important;
+.project-card .right img{
+    width: 100%;
 }
 html {
     scroll-behavior: smooth;
