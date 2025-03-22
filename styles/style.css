@@ -182,12 +182,6 @@ table {
 }
 
 
-
-
-
-
-
-
 header {
     position: fixed;
     z-index: 100;
@@ -397,17 +391,17 @@ nav a:active {
 .section.contact {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .contact .container {
     padding: 2rem;
-    height: 80vh;
+    /* height: 80vh; */
     /* border: 5px solid var(--clr-border-a0); */
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .contact .container .left {
@@ -419,15 +413,17 @@ nav a:active {
 }
 
 .contact .container .right {
-    height: 100%;
+    height: 22rem;
     width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    margin: 0 1rem;
     border-radius: 15px;
     text-align: center;
     height: 100%;
@@ -456,14 +452,14 @@ nav a:active {
     /* background-color: red; */
     margin-bottom: 1rem;
     width: 100%;
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
 }
@@ -867,20 +863,182 @@ footer {
         flex-direction: row;
         background-color: var(--clr-surface-tonal-a10);
         border-radius: 1rem;
-        bottom: 0.5rem;
+        bottom: 1rem;
+        opacity: 0.8;
         z-index: 101;
     }
 
     .socials>a {
-
+        margin: 0.4rem;
         height: 3rem;
         width: 3rem;
+    }
+
+    .quote h1 {
+        font-size: 2rem;
+    }
+
+    .quote p {
+        font-size: 1.6rem;
     }
 
 }
 
 @media (max-width: 800px) {
-    table{
-        width: 20rem;
-    };
+
+    .hero h1,
+    .section h1 {
+        font-size: 3rem;
+    }
+
+    .hero p,
+    .section p {
+        font-size: 0.75rem;
+        width: 90%;
+    }
+
+    .texts {
+        font-size: 1.4rem;
+        height: 1.4rem;
+    }
+
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card .left,
+    .project-card .right {
+        width: 100%;
+    }
+
+    table {
+        margin-bottom: 1rem;
+    }
+
+
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+        transition-duration: 350ms;
+    }
+
+    nav h1:hover {
+        font-size: 1.55rem;
+        color: var(--clr-primary-50);
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .about p,
+    .hero p {
+        max-width: 23rem;
+    }
+
+    .quote h1 {
+        font-size: 1.5rem;
+    }
+
+    .quote p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .tag {
+        font-size: 0.6rem;
+    }
+
+    .project-card h2{
+        font-size: 1.56rem;
+    }
+
+
+
+}
+
+@media (max-width: 680px) {
+    .grid-item h1 {
+        font-size: 1.8rem;
+    }
+
+    .grid-item h2 {
+        font-size: 1.2rem;
+    }
+
+    nav h1 {
+        font-size: 1.2rem;
+        transition-duration: 350ms;
+    }
+
+    nav h1:hover {
+        font-size: 1.24rem;
+        color: var(--clr-primary-50);
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .bento-grid {
+        grid-template-areas:
+            /* "web web music music"
+            "web web music music"
+            "web web tool tool"
+            "web web tool tool"
+            "prog prog tool tool"
+            "prog prog tool tool" */
+
+            "web web "
+            "web web "
+            "web web "
+            "web web "
+            "prog prog"
+            "prog prog"
+            "music music"
+            "music music"
+            "tool tool"
+            "tool tool"
+            "tool tool"
+            "tool tool"
+
+        ;
+    }
+
+    .hero h1,
+    .section h1 {
+        font-size: 2.25rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.55rem;
+    }
+
+    nav h1 {
+        font-size: 1rem;
+        transition-duration: 350ms;
+    }
+
+    nav h1:hover {
+        font-size: 1.05rem;
+        color: var(--clr-primary-50);
+    }
+
+    .grid-item h1 {
+        font-size: 1.2rem;
+    }
+
+    .grid-item h2 {
+        font-size: 0.9rem;
+    }
 }
