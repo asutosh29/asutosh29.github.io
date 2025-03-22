@@ -196,7 +196,7 @@ header {
 
 nav {
     /* max-width: 80vw; */
-    
+
     margin: 0 auto;
     background-color: var(--clr-surface-tonal-a0);
     color: white;
@@ -204,7 +204,7 @@ nav {
     display: flex;
     /* position: fixed; */
     top: 0;
-    
+
     height: 8vh;
     justify-content: space-between;
     align-items: center;
@@ -283,8 +283,7 @@ nav a:active {
 .hero img,
 .about img {
     border-radius: 50%;
-    width: 35rem;
-    
+    width: 25rem;
     animation-name: hover;
     animation-delay: 100ms;
     animation-duration: 2000ms;
@@ -293,6 +292,16 @@ nav a:active {
     animation-iteration-count: infinite;
 
     transition-duration: 500ms;
+}
+
+.hero p,
+.about p {
+    width: 34rem;
+}
+
+.projects p,
+#hobbies p {
+    max-width: 28rem;
 }
 
 /* .hero img:hover,
@@ -315,7 +324,7 @@ nav a:active {
 }
 
 .hero .hero-text {
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -647,7 +656,7 @@ footer {
     animation-iteration-count: infinite;
 }
 
-.grid-item:hover .above{
+.grid-item:hover .above {
     /* animation: none; */
     animation-name: shutter-up;
     /* animation-duration:  */
@@ -685,7 +694,7 @@ footer {
     /* justify-content: center; */
     position: fixed;
     bottom: 0;
-    left: 2rem;
+    left: 1rem;
 }
 
 .socials>a {
@@ -754,15 +763,17 @@ footer {
 }
 
 /* TEXT ANIMATION */
-.texts{
+.texts {
     color: white;
     display: flex;
     height: 4rem;
     font-size: 4rem;
 }
+
 .roles {
     overflow: hidden;
 }
+
 .role {
     padding-left: 0.5rem;
     display: block;
@@ -777,19 +788,99 @@ footer {
 }
 
 @keyframes changer {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    25%{
+
+    25% {
         transform: translateY(-100%);
     }
-    50%{
+
+    50% {
         transform: translateY(-200%);
     }
-    75%{
+
+    75% {
         transform: translateY(-300%);
     }
-    100%{
+
+    100% {
         transform: translateY(-400%);
     }
+}
+
+/* MEDIA QUERIES: cuz why not! */
+
+
+@media (max-width: 1351px) {
+    .texts {
+        font-size: 3rem;
+        height: 3rem;
+    }
+
+}
+
+@media (max-width: 1162px) {
+
+    .hero img,
+    .about img {
+        width: 15rem;
+
+    }
+
+    .hero h1 {
+        margin-bottom: 2rem;
+    }
+
+    .hero .hero-text {
+        margin-bottom: 1rem;
+    }
+
+    .about,
+    .hero {
+        margin-top: 6rem;
+        /* flex-direction: column-reverse; */
+        height: auto;
+        align-items: stretch;
+
+    }
+
+    .texts {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .hero img,
+    .about img {
+        width: 15rem;
+    }
+
+    .about,
+    .hero {
+        padding-left: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    .socials {
+        flex-direction: row;
+        background-color: var(--clr-surface-tonal-a10);
+        border-radius: 1rem;
+        bottom: 0.5rem;
+        z-index: 101;
+    }
+
+    .socials>a {
+
+        height: 3rem;
+        width: 3rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    table{
+        width: 20rem;
+    };
 }
