@@ -364,9 +364,9 @@ nav a:active {
     margin: 0 1rem;
     border-radius: 15px;
     display: block;
+    /* min-height: 15rem;
     width: 36rem;
-    min-height: 15rem;
-    height: 10rem;
+    height: 10rem; */
     background-color: var(--clr-surface-tonal-a20);
 }
 
