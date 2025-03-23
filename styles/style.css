@@ -254,6 +254,7 @@ nav a:active {
     text-decoration: underline;
     margin-bottom: 1rem;
     margin-top: 3rem;
+    margin-left: 1rem;
 
 }
 
@@ -657,12 +658,14 @@ footer {
 
 .grid-item:hover .above {
     /* animation: none; */
-    animation-name: shutter-up;
     /* animation-duration:  */
+    /* transform: translateY(-200%); */
+    /* animation-name: shutter-up;
     animation-direction: normal;
     animation-fill-mode: both;
-    animation-iteration-count: 1;
-    /* transform: translateY(-200%); */
+    animation-iteration-count: 1; */
+
+    animation: shutter-up 600ms ease-in-out forwards;
 }
 
 /* FUNCTIONALITIES */
@@ -714,8 +717,8 @@ footer {
 
 
 .socials .btn:hover {
-    background-color: var(--clr-primary-a40);
-    transform: translateY(-0.1rem) scale(1.01);
+    background-color: var(--clr-primary-a30);
+    transform: translateY(-0.2rem) scale(1.02);
     /* box-shadow: none; */
 
 
@@ -1039,6 +1042,10 @@ footer {
 
     .contact .container .right #quote p {
         font-size: 0.8rem !important;
+    }
+
+    .about, .hero{
+        padding-left: 0;
     }
 
 }
