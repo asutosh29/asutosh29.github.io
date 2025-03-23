@@ -85,6 +85,10 @@ hr {
     margin-left: 0;
 }
 
+.pl-10{
+    padding-left: 1rem;
+}
+
 .wrapper {
     max-width: 80vw;
     margin: 0 auto;
