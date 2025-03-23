@@ -16,7 +16,6 @@
 
     10% {
         top: 70%;
-        /* left: 40%; */
 
     }
 
@@ -26,7 +25,6 @@
     }
     30% {
         top: 40%;
-        /* left: 80%; */
     }
 
     40% {
@@ -35,7 +33,6 @@
     }
     60% {
         top: 8%;
-        /* left: 40%; */
     }
     80% {
         top: 20%;
@@ -55,7 +52,7 @@
 
 @keyframes shutter {
     0%{
-        /* transform: translateY(0.01rem); */
+    
     }
     100%{
         transform: translateY(-0.8rem);
