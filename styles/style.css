@@ -81,6 +81,10 @@ hr {
     background-color: var(--clr-primary-a0);
 }
 
+#AboutMe, #Iam{
+    margin-left: 0;
+}
+
 .wrapper {
     max-width: 80vw;
     margin: 0 auto;
@@ -788,6 +792,25 @@ footer {
     animation-timing-function: ease-in;
     animation-direction: alternate-reverse;
 
+}
+
+/* Ghost */
+
+.ghost {
+    position: absolute;
+    top: 0;
+
+    animation-name: ghost;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+}
+
+.ghost:hover {
+    animation-play-state: paused;
 }
 
 @keyframes changer {
