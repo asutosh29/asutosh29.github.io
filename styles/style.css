@@ -47,9 +47,10 @@
     }
 }
 
-.project-card .right img{
+.project-card .right img {
     width: 100%;
 }
+
 html {
     scroll-behavior: smooth;
     background-color: var(--clr-surface-tonal-a0);
@@ -635,15 +636,15 @@ footer {
 }
 
 .grid-item .below {
-    position: absolute;
+    position: relative;
 
 }
 
 .grid-item .above {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 85%;
     background-color: inherit;
-    position: relative;
+    position: absolute;
     z-index: 20;
     /* transition-duration: 1s; */
 
@@ -979,18 +980,29 @@ footer {
         color: white;
     }
 
+    .contact .container {
+        flex-direction: column;
+    }
+
+    .contact .container .left,
+    .contact .container .right {
+        width: 100%;
+    }
+
+    .bento-grid h1{
+        font-size: 2rem;
+    }
+
+    .section.skills{
+        height: auto;
+    }
+
 
 
 }
 
 @media (max-width: 680px) {
-    .grid-item h1 {
-        font-size: 1.8rem;
-    }
 
-    .grid-item h2 {
-        font-size: 1.2rem;
-    }
 
     nav h1 {
         font-size: 1.2rem;
@@ -1015,21 +1027,29 @@ footer {
             "prog prog tool tool"
             "prog prog tool tool" */
 
-            "web web "
-            "web web "
-            "web web "
-            "web web "
-            "prog prog"
-            "prog prog"
-            "music music"
-            "music music"
-            "tool tool"
-            "tool tool"
-            "tool tool"
-            "tool tool"
+            "web "
+            "prog "
+            "music "
+            "tool "
 
         ;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
     }
+    
+
+    .bento-grid .grid-item h1 {
+        font-size: 1.4rem;
+        /* background-color: #5bd507; */
+    }
+
+    .grid-item h2 {
+        /* background-color: red; */
+        font-size: 1rem;
+    }
+
 
     .hero h1,
     .section h1 {
@@ -1044,9 +1064,13 @@ footer {
         font-size: 0.8rem !important;
     }
 
-    .about, .hero{
+    .about,
+    .hero {
         padding-left: 0;
     }
+
+
+
 
 }
 

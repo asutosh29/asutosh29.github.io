@@ -55,10 +55,10 @@
 
 @keyframes shutter {
     0%{
-        transform: translateY(0.01rem);
+        /* transform: translateY(0.01rem); */
     }
     100%{
-        transform: translateY(-1.5rem);
+        transform: translateY(-0.8rem);
     }
 }
 
